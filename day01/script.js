@@ -5,10 +5,10 @@ const popularity = 150.5;
 const releaseDate = "2014-11-05";
 const originalLanguage = "en";
 const additionalVoteCount = 100;
-const genrs = "SF";
+const genre = "SF";
 const category = "영화";
 
-console.log(genrs + " " + category);
+console.log(genre + " " + category);
 console.log(additionalVoteCount + voteCount);
 console.log(title);
 console.log(voteAverage);
@@ -26,5 +26,5 @@ console.log(`평점: ${voteAverage}`);
 console.log(`개봉일: ${releaseDate}`);
 
 console.log(
-  `${title} ${releaseDate}에 개봉한 영화이며 , 현재 평점은 ${voteAverage}이고 ${voteCount}명이 평가했습니다.`,
+  `${title} ${releaseDate}에 개봉한 영화이며, 현재 평점은 ${voteAverage}이고 ${voteCount}명이 평가했습니다.`,
 );
