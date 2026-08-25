@@ -16,21 +16,20 @@ const descriptionElement = document.querySelector(".description");
 descriptionElement.classList.add("text-primary", "fw-bold");
 
 // 06. 첫 번째 영화 카드 만들어 추가하기
-const movieList = document.querySelector("#movie-list"); 
+const movieList = document.querySelector("#movie-list");
 
-const movieCard1 = document.createElement("div"); 
-movieCard1.textContent = message; 
-movieCard1.classList.add("border", "rounded", "p-3", "mb-2"); 
-movieList.append(movieCard1); 
+const movieCard1 = document.createElement("div");
+movieCard1.textContent = message;
+movieCard1.classList.add("border", "rounded", "p-3", "mb-2");
+movieList.append(movieCard1);
 
 // 07. 두 번째 영화 카드 만들어 추가하기
-const message2 = getMovieMessage("인터스텔라", 8.7); 
+const message2 = getMovieMessage("인터스텔라", 8.7);
 
-const movieCard2 = document.createElement("div"); 
-movieCard2.textContent = message2; 
-movieCard2.classList.add("border", "rounded", "p-3", "mb-2"); 
-movieList.append(movieCard2); 
+const movieCard2 = document.createElement("div");
+movieCard2.textContent = message2;
+movieCard2.classList.add("border", "rounded", "p-3", "mb-2");
+movieList.append(movieCard2);
 
 // // 08. 요소 삭제하기
 // movieCard2.remove();
-
