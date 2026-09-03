@@ -2,7 +2,7 @@ const movie = {
   id: 550,
   title: "Fight Club",
   vote_average: 8.4,
-  vote_count: 0,
+  vote_count: 1,
   detail: {
     runtime: 139,
   },
@@ -33,7 +33,7 @@ const { title: tt, vote_average: vag } = movie;
 // const undifined = director ?? "감독 정보 없음";
 // console.log(undifined);
 
-// const { vote_count, detail } = movie;
+const { vote_count, detail } = movie;
 
-// console.log(vote_count || 100);
-// console.log(vote_count ?? 0);
+console.log(vote_count || 100);
+console.log(vote_count ?? 0);
