@@ -96,6 +96,11 @@ async function searchTVShows(keyword) {
     const url = `https://api.themoviedb.org/3/search/tv?query=${encodedKeyword}&language=ko-KR&page=1`;
 
     const response = await fetch(url, options);
+    if (!response.ok) {
+      container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
+
+      return;
+    }
     const data = await response.json();
 
     console.log(data.results);
@@ -107,12 +112,7 @@ async function searchTVShows(keyword) {
       return;
     }
     renderTVShows(data.results);
-
-    if (!response.ok) {
-      container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
-
-      return;
-    }
+    
   } catch (error) {
     container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
 
